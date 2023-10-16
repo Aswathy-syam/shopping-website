@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online shopping cart</title>
+    <link rel="stylesheet" href="shopping.css">
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+
+<!-- nav -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-3 fw-bold fs-2" href="#">cara</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     
+      
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold fs-5" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold fs-5" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold fs-5" href="#">Contact</a>
+              </li>
+            </ul>
+        </div>
+
+<div class="icons">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-shopping-cart"></a>
+    <a href="#" class="fas fa-user"></a>
+</div>
+      </div>
+
+     
+   
+  </nav>
+
+<!--  carousal-->
+
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="img-fluid" src="https://img.freepik.com/free-photo/magnificent-woman-long-bright-skirt-dancing-studio-carefree-inspired-female-model-posing-with-pleasure-yellow_197531-11084.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697155200&semt=ais" class="d-block w-100" alt="noimg">
+        <div class="carousel-caption  d-md-block text-start">
+            <h5 >SALE UP TO 50% OFf</h5>
+           <h3 class="fw-bold fs-1">Stylist </h3>
+           <h3 class="fw-bold fs-1">Female clothes</h3>
+           <button class="fw-bold ">shop now</button>
+          </div>
+       
+
+      </div>
+
+      <div class="carousel-item">
+        <img class="img-fluid" src="https://img.freepik.com/premium-photo/young-woman-holding-colorful-shopping-bags-yellow-studio-background_116547-71804.jpg" class="d-block w-100" alt="noimg">
+        <!-- https://img.freepik.com/free-photo/smiley-woman-with-many-shopping-bags-pointing-possible-store-with-copy-space_23-2148673298.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697068800&semt=ais -->
+        <!-- https://img.freepik.com/premium-photo/young-woman-holding-colorful-shopping-bags-yellow-studio-background_116547-71804.jpg -->
+
+        <div class="carousel-caption  d-md-block text-start mt-3">
+            <h3 class="fw-bold fs-1">Winter collection</h3>
+            <h5>Sale  up to 30% off</h5>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <img  class="img-fluid"src="https://media.istockphoto.com/id/1413574174/photo/fashion-asian-woman-holding-shopping-bags-on-a-yellow-background-with-copy-space-holidays.jpg?s=612x612&w=0&k=20&c=b7z773cg_0or6WJGHycKl-kXFuYYYnsX21ull30aA40=" alt="noimg">
+        <div class="carousel-caption d-md-block text-start ">
+            <h4 class="fw-bold fs-1">buy 1 get 1 free</h4>
+            <p>Grab your favourite outfit.what are you waiting?</p>
+          </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+<!--  -->
+
+<section class="section__container sale__container">
+    <!-- <h2 class="section__title">On Sale</h2> -->
+    <div class="sale__grid">
+      <div class="sale__card">
+        <img src="https://rukminim2.flixcart.com/image/550/650/xif0q/dress/k/w/z/l-6103-sheetal-associates-original-imagmneh9asfefuz.jpeg?q=90&crop=false" alt="sale" />
+        <div class="sale__content">
+          <p class="sale__subtitle">WOMEN TSHIRT</p>
+          <h4 class="sale__title">sale <span>40%</span> off</h4>
+          <p class="sale__subtitle">- DON'T MISS -</p>
+          <button class="btn sale__btn">SHOP NOW</button>
+        </div>
+      </div>
+      <div class="sale__card">
+        <img src="https://assets.ajio.com/medias/sys_master/root/20230629/ufgt/649cd7a1a9b42d15c91cdb2b/shoetopia_tan_reptilian_pattern_slip-on_loafers.jpg" alt="sale" />
+        <div class="sale__content">
+          <p class="sale__subtitle">WOMAN FOOT WEARS</p>
+          <h4 class="sale__title">sale <span>25%</span> off</h4>
+          <p class="sale__subtitle">- DON'T MISS -</p>
+          <button class="btn sale__btn">SHOP NOW</button>
+        </div>
+      </div>
+      <div class="sale__card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFk6vT9_oIZPUwsmOySyl2rj9TyO3LwRlFosUruX3XAN7dgksOgzVsaXXWkWqtkmFiMng&usqp=CAU" alt="sale" />
+        <div class="sale__content">
+          <p class="sale__subtitle">BAGS</p>
+          <h4 class="sale__title">sale <span>20%</span> off</h4>
+          <p class="sale__subtitle">- DON'T MISS -</p>
+          <button class="btn sale__btn">SHOP NOW</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- shopping cart -->
+<div class="container-shopping">
+    <h2 class="head text-center">our launches</h2>
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card ">
+          <img class="img-fluid" src="https://rukminim2.flixcart.com/image/850/1000/kflftzk0/ethnic-set/f/k/t/xl-blmg7825-bitterlime-original-imafwfypbzp5jvms.jpeg?q=90 " alt="">
+          <div class="card-body">
+            <h3>Zwerlon</h3>
+            
+            <div class="star">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star "></i>
+              <i class="fa-solid fa-star "></i>
+            </div>
+            <h6 class="my-3">Price: <strong>2000</strong></h6>
+           <!-- <button class="addtocart"> <a href="#book">Add to cart</a></button> -->
+            <button class="buy-now"> <a href="#book">Buy now</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card ">
+          <img  class="img-fluid"src="https://media.istockphoto.com/id/940014538/photo/young-pretty-woman-akimbo-in-green-dress-looking-at-camera-isolated-on-orange.jpg?s=612x612&w=0&k=20&c=uZF-7aD6dt-CXho0W-Z7Fx4gaQpbVkAaEU38irsuNuo=" alt="">
+          <div class="card-body">
+            <h3>Freehand</h3>
+            
+            <div class="star ">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star "></i>
+              <i class="fa-solid fa-star "></i>
+            </div>
+            <h6 class="my-3">Price: <strong>2500</strong></h6>
+           <!-- <button class="addtocart"> <a href="#book">Add to cart</a></button> -->
+           <button class="buy-now"> <a href="#book">Buy now</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card ">
+          <img class="img-fluid" src="https://media.istockphoto.com/id/1324844508/photo/gorgeous-woman-wearing-beautiful-maxi-dress-posing-against-wall-with-a-wild-grape.jpg?s=612x612&w=0&k=20&c=BJrcuLt0m5Hm6zOhgO-E0TGqIxzWKdecgw1xcOu1aN4=" alt="">
+          <div class="card-body">
+            <h3>MILOST</h3>
+           
+            <div class="star">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star "></i>
+              <i class="fa-solid fa-star "></i>
+            </div>
+            <h6 class="my-3">Price: <strong>1900</strong></h6>
+        <!-- <button class="addtocart"> <a href="#book">Add to cart</a></button> -->
+        <button class="buy-now"> <a href="#book">Buy now</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card ">
+          <img class="img-fluid" src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/23354148/2023/5/23/4480d421-f6bd-4477-8d21-d73535cd2c121684856780791FemvyBlueGeorgetteMaxiDress1.jpg" alt="">
+          <div class="card-body">
+            <h3>HARPA</h3>
+            
+            <div class="star">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star "></i>
+              <i class="fa-solid fa-star "></i>
+            </div>
+            <h6 class="my-3">Price: <strong>1800</strong></h6>
+           <!-- <button class="addtocart"> <a href="#book">Add to cart</a></button> -->
+            <button class="buy-now"> <a href="#book">Buy now</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card ">
+          <img  class="img-fluid"src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/15547008/2021/10/27/ac62856f-254e-4e5b-9905-45af814b2a9c1635318309326-The-Vanca-Solid-Trapeze-Dress-1591635318309026-1.jpg" alt="">
+          <div class="card-body">
+            <h3>Aahwan</h3>
+            
+            <div class="star ">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star "></i>
+              <i class="fa-solid fa-star "></i>
+            </div>
+            <h6 class="my-3">Price: <strong>1500</strong></h6>
+           <!-- <button class="addtocart"> <a href="#book">Add to cart</a></button> -->
+           <button class="buy-now"> <a href="#book">Buy now</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card ">
+          <img class="img-fluid" src="https://rukminim2.flixcart.com/image/550/650/xif0q/top/x/j/0/-original-imagtqrkmgbwduah.jpeg?q=90&crop=false" alt="">
+          <div class="card-body">
+            <h3>IUGA</h3>
+           
+            <div class="star">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star "></i>
+              <i class="fa-solid fa-star "></i>
+            </div>
+            <h6 class="my-3">Price: <strong>900</strong></h6>
+        <!-- <button class="addtocart"> <a href="#book">Add to cart</a></button> -->
+        <button class="buy-now"> <a href="#book">Buy now</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-4 py-1 py-md-0">
+        <div class="card">
+          <img class="img-fluid " src="https://media.istockphoto.com/id/1156337633/photo/dancing-movements-look-amazing-in-this-long-dress.jpg?s=612x612&w=0&k=20&c=qTwuYXSVYTXJFu0QvfeyDgN_UIrgNEMTaqV6MtRyUu8= " alt="">
+          <div class="card-body">
+
+            <h3>KOTTY</h3>
+            
+            <div class="star">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star "></i>
+              <i class="fa-solid fa-star "></i>
+            </div>
+            <h6 class="my-3">Price: <strong>1300</strong></h6>
+        <!-- <button class="addtocart"><a href="#book">Add to cart</a></button> -->
+        <button class="buy-now"> <a href="#book">Buy now</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 py-1 py-md-0">
+        <div class="card h-100">
+          <img class="img-fluid" src="https://rukminim2.flixcart.com/image/850/1000/xif0q/ethnic-set/m/p/h/s-co-ord-4013-rudraaksha-original-imagq9hvkehjzeqq.jpeg?q=90" alt="">
+          <div class="card-body">
+            <h3>PLUSS</h3>
+            
+            <div class="star">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star "></i>
+              <i class="fa-solid fa-star "></i>
+            </div>
+            <h6 class="my-3">Price: <strong>2500</strong></h6>
+        <!-- <button class="addtocart"> <a href="#book">Add to cart</a></button> -->
+        <button class="buy-now"> <a href="#book">Buy now</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 py-1 py-md-0">
+        <div class="card ">
+          <img  class="img-fluid"src="https://rukminim2.flixcart.com/image/850/1000/xif0q/shirt/u/x/d/l-women-shirts-yellow-shlok-fashion-original-imagtgyf4e5mdzhm.jpeg?q=90" alt="">
+          <div class="card-body">
+            <h3>Rosery paris</h3>
+            
+            <div class="star">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star "></i>
+              <i class="fa-solid fa-star "></i>
+            </div>
+            <h6 class="my-3">Price: <strong>1400</strong></h6>
+        <!-- <button class="addtocart"><a href="#book">Add to cart</a></button> -->
+        <button class="buy-now"> <a href="#book">Buy now</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+
+<!-- new arrivals -->
+<section class="arrivals">
+
+    <div class="container-arrivals">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 position-relative overflow-hidden gx-7">
+           <img src="https://media.istockphoto.com/id/1155469464/photo/happy-young-asian-female-carrying-pastel-colored-shopping-bags-with-both-arms.jpg?s=612x612&w=0&k=20&c=3NlpmF1MAZcSUbm25kXReUzb7NZx2H1pyEZqg2_uHMI=" alt="">
+           <div class="position-absolute top-50 mx-5"> 
+            <h3 class="text-dark fs-5 ms-5">summer <br>collections</h3>
+            <button class="text-dark fs-5 ms-5">learn more</button>
+           </div>
+          
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 position-relative overflow-hidden gx-7 ">
+           <img src="https://media.istockphoto.com/id/839384612/photo/satisfied-woman-with-shopping-bags-and-vip-card-in-hand.jpg?s=612x612&w=0&k=20&c=QzNyqzKcLK7ipXrNBBdmUEbK3rM5XEroPELBGaw8VJs=" alt="" class="img ">
+           <div class="position-absolute top-50 mx-5 "> 
+            <h3 class="text-dark fs-5 ms-5">buy one get<br> one free</h3>
+            <button class="text-dark fs-5 ms-5">learn more</button>
+          </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 position-relative overflow-hidden gx-7 ">
+            <img src="https://media.istockphoto.com/id/1320296616/photo/rack-with-bright-stylish-clothes-hat-and-shoes-near-light-grey-wall-indoors-space-for-text.jpg?s=612x612&w=0&k=20&c=w8y6i-LGmsLg3VbWthM2EQv7QgHmDIWhs5RSyB8EvAU=" alt="">
+            <div class="position-absolute top-50 mx-5 "> 
+             <h3 class="text-dark fs-5 ms-5">upcoming <br>collections</h3>
+             <button class="text-dark fs-5 ms-5">learn more</button>
+            </div>
+           
+           </div>
+        </div>
+        
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+<!-- service -->
+
+<div class="container-grid">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 b border-start border-dark fw-bold">
+      <i class="fa-solid fa-truck-fast"></i>
+      <h3>Fast delivey</h3>
+      <h5>on order over 1000rs</h5>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 b border-start border-dark fw-bold">
+      <i class="fa-solid fa-rotate-left"></i>
+      <h3>Return policy</h3>
+      <h5>within 30 days</h5>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 b border-start border-dark fw-bold">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <h3>Free shipping</h3>
+      world wide
+    </div>
+  </div>
+</div>
+
+
+<!--  footer-->
+
+
+<div class="bg-light text-dark  pb-4">
+  <div class="container text-center text-md-left">
+    <div class="row text-center text-md-left">
+      <div class="col-md-3 col-lg-3 col-xl-3  mx-auto mt-3 col-sm-12 fw-bold ">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning fw-bold">cara</h5>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quo iusto iste nesciunt mollitia magni deleniti voluptatum quis.</p>
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning fw-bold">Service</h5>
+        <p>
+          <a href="#" class="text-dark fw-bold" style="text-decoration: none;">Email Marketing</a>
+        </p>
+
+        <p>
+          <a href="#" class="text-dark fw-bold" style="text-decoration: none;">Campanies</a>
+        </p>
+
+        <p>
+          <a href="#" class="text-dark fw-bold" style="text-decoration: none;">Branding</a>
+        </p>
+
+        <p>
+          <a href="#" class="text-dark fw-bold" style="text-decoration: none;">Offline</a>
+        </p>
+
+      </div>
+
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+       <h5 class="text-uppercase mb-4 font-weight-bold text-warning fw-bold">About</h5>
+       <p>
+        <a href="#" class="text-dark fw-bold" style="text-decoration: none;">Our story</a>
+      </p>
+
+      <p>
+        <a href="#" class="text-dark fw-bold" style="text-decoration: none;">Benifits</a>
+      </p>
+
+      <p>
+        <a href="#" class="text-dark fw-bold" style="text-decoration: none;">Team</a>
+      </p>
+      <p>
+        <a href="#" class="text-dark fw-bold" style="text-decoration: none;">Careers</a>
+      </p>
+      </div>
+
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+       
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning fw-bold">Contacts</h5>
+        <p>
+        <i class="fas fa-envelope mr-3 fw-bold "></i>qwery@gmail.com
+      </p>
+      <p>
+        <i class="fas fa-phone mr-3 fw-bold"></i>1234536309
+      </p>
+
+       </div>
+       <div class="col-md-5 col-lg-4">
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="btn-floating btn-sm text-white"style="font-size 23px;"><i class="fab fa-facebook"></i></a>
+            </li>
+
+            <li class="list-inline-item">
+              <a href="#" class="btn-floating btn-sm text-white"style="font-size 23px;"><i class="fab fa-twitter"></i></a>
+            </li>
+
+            <li class="list-inline-item">
+              <a href="#" class="btn-floating btn-sm text-white"style="font-size 23px;"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+       </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+    <!-- <-- script --> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
